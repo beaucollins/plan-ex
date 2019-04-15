@@ -1,0 +1,67 @@
+
+<svg width="585px" height="233px" viewBox="0 0 585 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="76.4938767%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="63.4301933%" y1="11.7542614%" x2="63.4301933%" y2="77.3171165%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50.7311%" gradientTransform="translate(0.500000,0.500000),rotate(170.261057),scale(1.000000,0.913506),translate(-0.500000,-0.500000)" id="radialGradient-4">
+            <stop stop-color="#000000" stop-opacity="0.247268357" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="69.4979409%" cy="29.3241279%" fx="69.4979409%" fy="29.3241279%" r="50%" id="radialGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.3" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Configure" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Realtime-Service" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" letter-spacing="-0.400000006" fill="#393939">
+            <tspan x="409.064" y="13">Realtime Service</tspan>
+        </text>
+        <text id="App-Server" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" letter-spacing="-0.4" fill="#393939">
+            <tspan x="44.412" y="13">App Server</tspan>
+        </text>
+        <path id="Line" d="M194.929111,108.5 L224,108.5 C224.552285,108.5 225,108.947715 225,109.5 C225,110.052285 224.552285,110.5 224,110.5 L194.929111,110.5 C194.443881,113.892294 191.526472,116.5 188,116.5 C184.134007,116.5 181,113.365993 181,109.5 C181,105.634007 184.134007,102.5 188,102.5 C191.526472,102.5 194.443881,105.107706 194.929111,108.5 Z M368.777778,110.5 L366,110.5 C365.447715,110.5 365,110.052285 365,109.5 C365,108.947715 365.447715,108.5 366,108.5 L368.777778,108.5 L368.777778,103.335115 C368.777778,102.873894 369.151672,102.5 369.612893,102.5 C369.742541,102.5 369.870408,102.530185 369.986368,102.588165 L382.315954,108.752959 C382.728483,108.959223 382.895694,109.460854 382.689429,109.873383 C382.608621,110.035001 382.477572,110.16605 382.315954,110.246858 L369.986368,116.411652 C369.573839,116.617916 369.072208,116.450706 368.865943,116.038177 C368.807963,115.922216 368.777778,115.794349 368.777778,115.664702 L368.777778,110.5 Z M237,110.5 C236.447715,110.5 236,110.052285 236,109.5 C236,108.947715 236.447715,108.5 237,108.5 L267,108.5 C267.552285,108.5 268,108.947715 268,109.5 C268,110.052285 267.552285,110.5 267,110.5 L237,110.5 Z M280,110.5 C279.447715,110.5 279,110.052285 279,109.5 C279,108.947715 279.447715,108.5 280,108.5 L310,108.5 C310.552285,108.5 311,108.947715 311,109.5 C311,110.052285 310.552285,110.5 310,110.5 L280,110.5 Z M323,110.5 C322.447715,110.5 322,110.052285 322,109.5 C322,108.947715 322.447715,108.5 323,108.5 L353,108.5 C353.552285,108.5 354,108.947715 354,109.5 C354,110.052285 353.552285,110.5 353,110.5 L323,110.5 Z" fill="#606060" fill-rule="nonzero"></path>
+        <path id="Line" d="M367.070889,146 L338,146 C337.447715,146 337,145.552285 337,145 C337,144.447715 337.447715,144 338,144 L367.070889,144 C367.556119,140.607706 370.473528,138 374,138 C377.865993,138 381,141.134007 381,145 C381,148.865993 377.865993,152 374,152 C370.473528,152 367.556119,149.392294 367.070889,146 Z M193.222222,144 L196,144 C196.552285,144 197,144.447715 197,145 C197,145.552285 196.552285,146 196,146 L193.222222,146 L193.222222,151.164885 C193.222222,151.626106 192.848328,152 192.387107,152 C192.257459,152 192.129592,151.969815 192.013632,151.911835 L179.684046,145.747041 C179.271517,145.540777 179.104306,145.039146 179.310571,144.626617 C179.391379,144.464999 179.522428,144.33395 179.684046,144.253142 L192.013632,138.088348 C192.426161,137.882084 192.927792,138.049294 193.134057,138.461823 C193.192037,138.577784 193.222222,138.705651 193.222222,138.835298 L193.222222,144 Z M325,144 C325.552285,144 326,144.447715 326,145 C326,145.552285 325.552285,146 325,146 L295,146 C294.447715,146 294,145.552285 294,145 C294,144.447715 294.447715,144 295,144 L325,144 Z M282,144 C282.552285,144 283,144.447715 283,145 C283,145.552285 282.552285,146 282,146 L252,146 C251.447715,146 251,145.552285 251,145 C251,144.447715 251.447715,144 252,144 L282,144 Z M239,144 C239.552285,144 240,144.447715 240,145 C240,145.552285 239.552285,146 239,146 L209,146 C208.447715,146 208,145.552285 208,145 C208,144.447715 208.447715,144 209,144 L239,144 Z" fill="#606060" fill-rule="nonzero"></path>
+        <text id="Key-Exchange" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" letter-spacing="-0.4" fill="#393939">
+            <tspan x="236.36" y="77">Key Exchange</tspan>
+        </text>
+        <g id="WP-App-Server" transform="translate(53.000000, 72.000000)">
+            <g id="Group">
+                <polygon id="bottom" fill-opacity="0.75" fill="#03E3FF" points="-7.67441666e-15 108.293878 26.1438849 132 79 132 52.8561151 108.293878"></polygon>
+                <polygon id="back" fill-opacity="0.75" fill="#03E3FF" points="2.42063563e-14 0 52.8561151 0 52.8561151 108.293878 2.42063563e-14 108.293878"></polygon>
+                <polygon id="left" fill-opacity="0.75" fill="#03E3FF" points="-2.17691572e-15 108.293878 26.1438849 132 26.1438849 23.7061224 -2.17691572e-15 0"></polygon>
+                <polygon id="right" fill-opacity="0.75" fill="#03E3FF" points="52.8561151 0 52.8561151 108.293878 79 132 79 23.7061224"></polygon>
+                <polygon id="top" fill-opacity="0.75" fill="#03E3FF" points="-1.98712574e-15 0 26.1438849 23.7061224 79 23.7061224 52.8561151 0"></polygon>
+                <polygon id="front" fill-opacity="0.75" fill="#03E3FF" points="26.1438849 23.7061224 79 23.7061224 79 132 26.1438849 132"></polygon>
+                <polygon id="Path" stroke="#000000" stroke-width="0.5" fill="url(#linearGradient-1)" points="79 132 26.1438849 132 0 108.293878 0 0 52.8561151 0 79 23.7061224"></polygon>
+                <polygon id="front" fill="url(#linearGradient-2)" points="26.1438849 23.7061224 79 23.7061224 79 132 26.1438849 132"></polygon>
+                <polygon id="top" fill="url(#linearGradient-3)" points="-1.98712574e-15 0 26.1438849 23.7061224 79 23.7061224 52.8561151 0"></polygon>
+            </g>
+        </g>
+        <g id="Realtime-Server" transform="translate(419.000000, 92.000000)">
+            <g id="Group">
+                <circle id="Oval" stroke="#292929" fill="#FF00FF" cx="46.5" cy="46.5" r="46.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-4)" cx="46.5" cy="46.5" r="46.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-5)" cx="46.5" cy="46.5" r="46.5"></circle>
+            </g>
+        </g>
+        <text id="public-api.wordpress" font-family="Monaco" font-size="12" font-weight="normal" letter-spacing="-0.299999982" fill="#393939">
+            <tspan x="0.185937285" y="37">public-api.wordpress.com</tspan>
+        </text>
+        <text id="public-api.wordpress" font-family="Menlo-Regular, Menlo" font-size="12" font-weight="normal" letter-spacing="-0.300000012" fill="#393939">
+            <tspan x="419" y="227">public-api.wordpress.com</tspan>
+        </text>
+        <text id="🔑" font-family="AppleColorEmoji, Apple Color Emoji" font-size="14" font-weight="normal" letter-spacing="-0.350000024" fill="#845353">
+            <tspan x="393" y="230">🔑</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Real Time</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        body {
+            color: #333;
+            font: 14px/1.5 sans-serif;
+            margin: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Avenir-Next, Avenir, sans-serif;
+            font-weight: normal;
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+
+        header {
+            padding: 5% 10%;
+            border-bottom: 1px solid #CCC;
+        }
+
+        section {
+            padding: 5% 10%;
+            border-bottom: 1px solid #EEE;
+        }
+
+        figure {
+            margin: 40px auto;
+        }
+
+        figure img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        figure figcaption {
+            margin: 20px 0;
+            padding: 10px;
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+        pre {
+            padding: 20px;
+            margin: 40px auto;
+            background: #333;
+            color: #FFF;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Realtime Service</h1>
+    </header>
+    <section>
+        <p>Real Time APIs can provide three unique features that a state-less REST APIs cannot
+            specifically because they are state-less:</p>
+        <ol>
+            <li>Stateful: the service <em>knows</em> who is on the line.</li>
+            <li>Live: the App is able to push data to the client without the client asking for it.</li>
+        </ol>
+        <p>Real Time APIs lend themselves to higher complexity relative to RESTful APIs <em>because</em> of their
+            statefulness. Each open connection can be considered a whole application in and of itself with
+            its own data and lifecycle concerns.
+        </p>
+        <p>There are at least three general features that a Stateful Real-Time API is going to be better at than
+            anything built on a RESTful equivalent:
+        </p>
+        <ul>
+            <li>Collaboration: pushing data to clients as events happen is the basis for collaborative
+                experiences. (e.g. Client A edited blog post 1 with modification Z is sent to all other
+                concerned clients).
+            </li>
+            <li>Presence: knowing that someone or something is available to be interacted with. (e.g. Which customer
+                support representative is online and can be assigned this chat.)
+            </li>
+            <li>Messaging: brokering real-time messages between clients (e.g. Ripley is typing).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Authentication &amp; Authorization</h2>
+
+        <p>For any realtime service to work it needs to allow clients to connect to it.</p>
+        <p>To allow an App hosted on <code>public-api.wordpress.com</code> to push messages to
+         specific clients, it needs to tell those clients how to subscribe to its events.</p>
+        <p>The App hosted on <code>public-api.wordpress.com</code> can issue its client a token
+            that the client can use to connect to the Realtime service.</p>
+        <p><strong>Example:</strong> the Happy Tools™️ Happy Schedule<sup>Ⓡ</sup> wants to
+            show Alice that Bob is adding an event to the schedule that she is looking at.</p>
+        <p>The Happy Schedule client application will be given a token by the App Server (perhaps over a REST request)</p>
+        <pre>
+GET /wpcom/v2/happytools/schedule/planner?date=2020-04-01
+</pre>
+        <p>The REST server responds with the the schedule data but also token to use to subscribe to
+            realtime events for that same resource.
+        </p>
+        <pre>{
+  "schedule": {
+    // complicated date structure
+  },
+  "subscribe": "realtime.com/public-ap.wordpress.com/channel/TOKEN"
+}
+</pre>
+
+        <p>The realtime service and `public-api.wordpress.com` will use a shared secret to validate that
+            the token used by the client to connect to the realtime service came from `public-api.wordpress.com`.
+        </p>
+
+        <p>This validation could happen at the time the client attempts to subscribe or possibly with a signature
+            verification using a shared secret exchanged between `public-api.wordpress.com` and the realtime service
+            during a previous configuration.</p>
+
+        <figure>
+                <img src="./key-exchange.svg" />
+                <figcaption>Exchange keys to support HTTP-less authentication and authorization.</figcaption>
+        </figure>
+
+        <p>Alice's Happy Schedule client application can use this <code>subscribe</code> token with the realtime service
+            to start receiving real time events from <code>public-api.wordpress.com</code>. But where do these events
+            come from and how do they get to Alice's browser?</p>
+    </section>
+
+    <section>
+        <h2>Collaboration with Pub/Sub</h2>
+
+        <p>The most straightforward use of a realtime service will be allowing clients to subscribe to resources
+            that they care about and receive events about those resources as they happen.
+        </p>
+
+        <p>When Alice's Happy Tools App deems it necessary, it will use the token provided by the REST Application server
+            to subcribe to the resource using the token provided by the server. It will do this by connecting to the pre-determined
+            realtime server address and ask to subcribe to the resource represented by the token.</p>
+        <p>The client side library that supports this will be intelligent enough to subscribe to multiple resources
+            on a single channel.
+        </p>
+        </p>
+        <figure>
+            <img src="./subscribe.svg" />
+            <figcaption>Client subscribing to realtime event with a token created by the application server.</figcaption>
+        </figure>
+        <p>Now when the REST Application server determines a resource has been modified it will publish the event
+            with the realtime server who will know which clients have subcribed to the same resource.</p>
+        <figure>
+            <img src="./publish.svg" />
+        </figure>
+
+        <h3>Quick wins with <code>WP-API</code></h3>
+        <p>The <code>WP-API</code> interface for WordPress is declarative _and_ extensible. It may be</p>
+    </section>
+
+    <section>
+        <h1>Presence</h1>
+    </section>
+
+    <section>
+        <h1>Messaging</h1>
+    </section>
+</body>
+
+</html>

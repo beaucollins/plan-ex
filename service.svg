@@ -1,0 +1,22 @@
+
+<svg width="157px" height="157px" viewBox="0 0 157 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50.7311%" gradientTransform="translate(0.500000,0.500000),rotate(170.261057),scale(1.000000,0.913506),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#000000" stop-opacity="0.247268357" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="69.4979409%" cy="29.3241279%" fx="69.4979409%" fy="29.3241279%" r="50%" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.3" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Realtime-Server" transform="translate(5.000000, 3.000000)">
+            <g id="Group">
+                <circle id="Oval" stroke="#292929" fill="#FF00FF" cx="73.5" cy="73.5" r="73.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-1)" cx="73.5" cy="73.5" r="73.5"></circle>
+                <circle id="Oval" fill="url(#radialGradient-2)" cx="73.5" cy="73.5" r="73.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
